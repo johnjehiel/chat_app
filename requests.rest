@@ -1,0 +1,44 @@
+# POST http://localhost:5000/api/auth/signup
+# Content-Type: application/json
+
+# {
+#     "fullName": "Jane Doe",
+#     "username": "Janedoe",
+#     "password": "123456",
+#     "confirmPassword": "123456",
+#     "gender": "female"
+# }
+
+# POST http://localhost:5000/api/auth/login
+# Content-Type: application/json
+
+# {
+#     "username": "Johndoe",
+#     "password": "123456"
+# }
+
+# SEND MESSAGES
+
+# POST http://localhost:5000/api/messages/send/65e2c2aa46e0b335f7dab9f8
+# Content-Type: application/json
+
+# {
+#     "message": "Heyyy, john here again"
+# }
+
+# GET MESSAGES
+
+# GET http://localhost:5000/api/messages/65e2c2aa46e0b335f7dab9f8
+# Content-Type: application/json
+
+# {
+    
+# }
+
+
+GET http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+    
+}
