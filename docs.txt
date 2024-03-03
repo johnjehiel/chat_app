@@ -1,0 +1,9 @@
+BUGS:
+1) new incoming message seems to appear to the chat currently selected, even if the currently selected chat is not the sender of this new incoming message. 
+    solution:
+        - we check whether the receiverId fo the new nessage is the same as that of the selectedConversation and only then do we update the messages
+         that is, const check = newMessage.receiverId == selectedConversation.id
+                if (check) {
+				setMessages([...messages, newMessage]);
+			}
+        - we also pass thhe selectedConversation in the useEffect so that we can rerender and reload the messages !
